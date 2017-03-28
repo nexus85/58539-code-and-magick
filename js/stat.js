@@ -57,7 +57,7 @@ window.renderStatistics = function(ctx, names, times){
       }
 
       ctx.fillStyle = 'rgba(0, 0, 255, '+ alpha +')';
-    };
+    }
 
     ctx.fillRect(startX + (barWidth + barSpace) * i, startY + histogramHeight - step * times[i], barWidth, step * times[i]);
     ctx.fillText(times[i].toFixed(0), startX + (barWidth + barSpace) * i, startY + histogramHeight - step * times[i] - fontHeight);
