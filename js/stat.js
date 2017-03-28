@@ -1,6 +1,6 @@
 'use strict';
 
-window.renderStatistics = function(ctx, names, times){
+window.renderStatistics = function (ctx, names, times) {
 
   // Draw cloud
   ctx.shadowOffsetX = 10;
@@ -56,7 +56,7 @@ window.renderStatistics = function(ctx, names, times){
         alpha = Math.random().toFixed(1);
       }
 
-      ctx.fillStyle = 'rgba(0, 0, 255, '+ alpha +')';
+      ctx.fillStyle = 'rgba(0, 0, 255, ' + alpha + ')';
     }
 
     ctx.fillRect(startX + (barWidth + barSpace) * i, startY + histogramHeight - step * times[i], barWidth, step * times[i]);
@@ -64,4 +64,4 @@ window.renderStatistics = function(ctx, names, times){
     ctx.fillText(names[i], startX + (barWidth + barSpace) * i, startY + histogramHeight + 5);
   }
 
-}
+};
